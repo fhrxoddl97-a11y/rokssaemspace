@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전경록 팀장 | 운동제어 및 통증케어 전문가</title>
+    
+    <!-- Google Fonts: Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#F97316', // 포인트 컬러: 주황색
+                        darkbg: '#09090b', // 배경색: Zinc-950
+                        cardbg: '#18181b', // 카드 배경: Zinc-900
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* 부드러운 스크롤 */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* 텍스트 드래그 색상 변경 */
+        ::selection {
+            background-color: #F97316;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-white font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- 1. 히어로 섹션 -->
+    <header class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- 배경 이미지 & 오버레이 -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" alt="Gym Background" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-darkbg/50 via-darkbg/80 to-darkbg"></div>
+        </div>
+
+        <!-- 메인 컨텐츠 -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
+            <p class="text-brand font-bold tracking-widest mb-4 text-sm md:text-base uppercase">Motor Control & Pain Care Specialist</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight break-keep">
+                통증 없는 움직임,<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-orange-300">과학적 근거</span>로 증명합니다.
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 font-light break-keep">
+                안녕하세요! 록쌤입니다!<br>
+                운동제어와 학습을 기반으로 당신의 몸을 다시 설계해 드립니다.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-brand text-white font-bold rounded-full hover:bg-orange-600 transition-all transform hover:scale-105 shadow-lg shadow-orange-900/50">
+                    지금 문의하기
+                </a>
+                <a href="#program" class="px-8 py-4 border border-gray-600 text-gray-300 font-medium rounded-full hover:border-brand hover:text-brand transition-all">
+                    프로그램 보기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 프로필 섹션 -->
+    <section id="profile" class="py-20 px-6 md:px-12 bg-darkbg">
+        <div class="max-w-6xl mx-auto">
+            <!-- 레이아웃 조정: gap을 늘리고 이미지 영역 비율 축소 -->
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <!-- 프로필 이미지: 너비를 줄여 밸런스 조정 -->
+                <div class="w-full md:w-5/12 lg:w-4/12 relative group max-w-md mx-auto md:mx-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand to-orange-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-800 shadow-2xl">
+                        <!-- 업로드된 이미지 파일명 적용 -->
+                        <img src="KakaoTalk_Photo_2025-06-09-14-56-08%20003.jpeg" alt="전경록 팀장 프로필" class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+
+                <!-- 약력 및 소개 -->
+                <div class="w-full md:w-7/12 lg:w-8/12">
+                    <div class="inline-block px-3 py-1 bg-zinc-800 text-brand text-xs font-bold rounded-full mb-4">PROFILE</div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">팀장 <span class="text-brand">전경록</span></h2>
+                    
+                    <div class="space-y-6 text-gray-300">
+                        <p class="leading-relaxed">
+                            "통증은 결과일 뿐, 원인은 움직임에 있습니다."<br>
+                            단순한 운동 반복이 아닌, 뇌가 기억하는 올바른 움직임을 교육합니다.
+                            트레이너와 강사들을 가르치는 전문가로서, 회원님의 몸을 가장 과학적으로 분석합니다.
+                        </p>
+                        
+                        <div class="bg-cardbg p-6 rounded-xl border border-zinc-800">
+                            <h3 class="text-white font-bold mb-4 flex items-center">
+                                <i class="fas fa-check-circle text-brand mr-2"></i> 핵심 이력
+                            </h3>
+                            <ul class="space-y-2 text-sm md:text-base">
+                                <!-- 순서 변경: 강사/스터디장 이력을 상단으로 이동 -->
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>Roknesiology 록쌤의 운동학 스터디장</li>
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>Parameter:Velocity 대표강사</li>
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>3인3색 움직임을말하다 대표강사</li>
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>CMS인지움직임 전문가 보조강사</li>
+                                
+                                <!-- 순서 변경: 자격 및 전문 분야를 하단으로 이동 + 텍스트 수정 -->
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>석,박,학,교수님까지 50개 이상의 자격 취득 및 수료</li>
+                                <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>운동제어 / 운동학습 / 통증관리 / 불균형</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 증명 섹션 (성과) -->
+    <section class="py-16 bg-cardbg border-y border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-center text-2xl font-bold mb-12">전문가들이 찾는 <span class="text-brand">진짜 전문가</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- 성과 1 -->
+                <div class="p-6 rounded-2xl bg-darkbg hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-brand/10 rounded-full flex items-center justify-center mb-4 text-brand text-2xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-white mb-2">Expert</h3>
+                    <p class="text-gray-400 text-sm break-keep">트레이너/물리치료사/강사 대상<br>오프라인 실무 교육 진행</p>
+                </div>
+                
+                <!-- 성과 2 -->
+                <div class="p-6 rounded-2xl bg-darkbg hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-brand/10 rounded-full flex items-center justify-center mb-4 text-brand text-2xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-white mb-2">Online Edu</h3>
+                    <p class="text-gray-400 text-sm break-keep">현직 전문가 대상<br>온라인 전문 교육 진행</p>
+                </div>
+
+                <!-- 성과 3 -->
+                <div class="p-6 rounded-2xl bg-darkbg hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-brand/10 rounded-full flex items-center justify-center mb-4 text-brand text-2xl">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="text-3xl font-black text-white mb-2">Care</h3>
+                    <!-- 텍스트 수정: 병명 목록 변경 (OA, ACL, 디스크, 족저근막염) -->
+                    <p class="text-gray-400 text-sm break-keep">OA, ACL, 디스크,<br>족저근막염 등 다양한 병력 관리</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 프로그램 섹션 -->
+    <section id="program" class="py-20 px-6 bg-darkbg">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brand font-bold tracking-wider text-sm">PROGRAMS</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">맞춤형 솔루션 & 강의</h2>
+                <p class="text-gray-400 mt-4">회원님을 위한 트레이닝부터 전문가를 위한 심화 강의까지.</p>
+            </div>
+
+            <!-- 프로그램 리스트 (세로형 배치) -->
+            <div class="flex flex-col gap-6">
+                
+                <!-- 01. 1:1 Personal Consulting -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" alt="1대1 컨설팅" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
+                    </div>
+                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+                        <div class="text-brand font-bold mb-2 text-sm">01</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3">1:1 Personal Consulting</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            개인의 신체 구조와 생활 습관을 정밀 분석하여 맞춤형 운동 방향성을 제시하는 프리미엄 상담입니다.
+                            단순한 운동 지도가 아닌, 라이프스타일 전반을 아우르는 솔루션을 제공합니다.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
+                            상담 신청하기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 02. Pain Relief Program -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row-reverse">
+                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544367563-12123d8966bf?q=80&w=2070&auto=format&fit=crop" alt="통증 완화" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
+                    </div>
+                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+                        <div class="text-brand font-bold mb-2 text-sm">02</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3">Pain Relief Program</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            근거 기반(Evidence-based) 통증 케어 솔루션입니다. 
+                            통증의 원인을 찾아 움직임을 개선하고, 일상 생활에서의 불편함을 해소하여 삶의 질을 높여드립니다.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
+                            자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 03. Hypertrophy Program -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" alt="근비대" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
+                    </div>
+                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+                        <div class="text-brand font-bold mb-2 text-sm">03</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3">Hypertrophy Program</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            최신 스포츠 과학 논문에 기반한 효율적인 근비대 프로그램입니다. 
+                            무작정 중량을 올리는 것이 아니라, 정확한 자극과 부하 설정을 통해 정체기 없는 성장을 약속합니다.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
+                            자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 04. Roknesiology-Online (링크: s2V51O6h) -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row-reverse">
+                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" alt="온라인 강의" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
+                    </div>
+                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+                        <div class="text-brand font-bold mb-2 text-sm">04</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3">Roknesiology-Online 강의신청</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            시간과 장소에 구애받지 않는 전문가를 위한 온라인 스터디입니다. 
+                            해부학적 지식부터 운동 역학까지, 록쌤만의 인사이트가 담긴 강의를 온라인으로 만나보세요.
+                        </p>
+                        <a href="https://open.kakao.com/o/s2V51O6h" target="_blank" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
+                            강의 신청하기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 05. Parameter-offline (링크: sgc6moNh) -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2069&auto=format&fit=crop" alt="오프라인 강의" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
+                    </div>
+                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
+                        <div class="text-brand font-bold mb-2 text-sm">05</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3">Parameter-offline 강의신청</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            현장에서 즉시 적용 가능한 실전 테크닉을 배웁니다. 
+                            움직임의 파라미터를 조절하여 회원에게 최적의 솔루션을 제공하는 노하우를 오프라인에서 직접 전수합니다.
+                        </p>
+                        <a href="https://open.kakao.com/o/sgc6moNh" target="_blank" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
+                            강의 신청하기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 문의하기 섹션 -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-b from-cardbg to-darkbg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Change Your Movement</h2>
+            <p class="text-gray-300 mb-12 text-lg">
+                통증 때문에 고민이신가요? 더 나은 퍼포먼스를 원하시나요?<br>
+                지금 바로 전문가와 상의하세요.
+            </p>
+
+            <div class="flex justify-center mb-12">
+                <!-- 카카오톡 문의: sZUPkDeh 연결 -->
+                <a href="https://open.kakao.com/o/sZUPkDeh" target="_blank" class="flex items-center justify-center gap-3 px-8 py-4 bg-[#FEE500] text-[#3c1e1e] rounded-xl font-bold hover:bg-[#ebd300] transition-all shadow-lg hover:shadow-[#fee500]/30 group w-full max-w-sm">
+                    <i class="fas fa-comment text-xl"></i>
+                    카카오톡 상담하기
+                    <i class="fas fa-chevron-right text-sm opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <p class="text-gray-500 text-sm">더 많은 정보와 일상은 인스타그램에서 확인하세요.</p>
+                <!-- 인스타그램: develop_rokssaem (크기 확대 & 그라데이션 브랜딩 적용) -->
+                <a href="https://www.instagram.com/develop_rokssaem/" target="_blank" class="inline-flex items-center gap-3 transition-transform hover:scale-105">
+                    <!-- 아이콘: 인스타그램 그라데이션 적용 -->
+                    <i class="fab fa-instagram text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-500"></i>
+                    <!-- 텍스트: 인스타그램 그라데이션 적용 -->
+                    <span class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-500 pb-1">
+                        develop_rokssaem
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="py-8 border-t border-zinc-900 text-center text-gray-600 text-sm bg-darkbg">
+        <p>경기도 고양시 일산서구 중앙로 1406 한솔코아 7층 | 피트니스</p>
+        <p class="mt-2">&copy; 2024 Jeon Gyeong-rok. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
