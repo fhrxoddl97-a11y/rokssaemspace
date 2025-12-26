@@ -28,15 +28,6 @@
                     },
                     fontFamily: {
                         sans: ['Noto Sans KR', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
                     }
                 }
             }
@@ -95,8 +86,7 @@
                 <div class="w-full md:w-5/12 lg:w-4/12 relative group max-w-md mx-auto md:mx-0">
                     <div class="absolute -inset-1 bg-gradient-to-r from-brand to-orange-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                     <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-800 shadow-2xl">
-                        <!-- 임시 이미지 사용 (사용자 로컬 파일 대체) -->
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" alt="전경록 팀장 프로필(임시)" class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                        <img src="KakaoTalk_Photo_2025-06-09-14-56-08%20003.jpeg" alt="전경록 팀장 프로필" class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
                     </div>
                 </div>
 
@@ -121,6 +111,7 @@
                                 <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>Parameter:Velocity 대표강사</li>
                                 <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>3인3색 움직임을말하다 대표강사</li>
                                 <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>CMS인지움직임 전문가 보조강사</li>
+                                <!-- 텍스트 수정: 석,박,학 -> 박,학 -->
                                 <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>박,학,교수님까지 50개이상 자격취득 및 수료</li>
                                 <li class="flex items-start"><span class="w-1.5 h-1.5 bg-brand rounded-full mt-2 mr-2 shrink-0"></span>운동제어 / 운동학습 / 통증관리 / 불균형</li>
                             </ul>
@@ -151,6 +142,7 @@
                     <div class="w-16 h-16 mx-auto bg-brand/10 rounded-full flex items-center justify-center mb-4 text-brand text-2xl">
                         <i class="fas fa-laptop-code"></i>
                     </div>
+                    <!-- 텍스트 수정: Online Edu -> On/Offline Edu -->
                     <h3 class="text-3xl font-black text-white mb-2">On/Offline Edu</h3>
                     <p class="text-gray-400 text-sm break-keep">현직 전문가 대상<br>온/오프라인 전문 교육 진행</p>
                 </div>
@@ -178,7 +170,7 @@
 
             <div class="flex flex-col gap-6">
                 
-                <!-- 01. 1:1 Personal Consulting -->
+                <!-- 01. 1:1 Personal Consulting (좌측 이미지) -->
                 <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
                     <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=2070&auto=format&fit=crop" alt="1대1 컨설팅 상담" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
@@ -196,7 +188,7 @@
                     </div>
                 </div>
 
-                <!-- 02. Real Reviews -->
+                <!-- 02. Real Reviews (우측 이미지 - 이동됨) -->
                 <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row-reverse">
                     <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop" alt="회원 리뷰 및 후기" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
@@ -208,37 +200,20 @@
                             실제 회원님들의 생생한 변화와 후기를 확인하세요. 
                             검증된 결과와 만족도가 증명하는 록쌤의 트레이닝 퀄리티를 직접 확인하실 수 있습니다.
                         </p>
+                        <!-- 링크 수정됨: 블로그 URL 연결 & 새 창 열기 적용 -->
                         <a href="https://blog.naver.com/rokessaem/224115656889" target="_blank" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
                             리뷰 보러가기 <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 03. Lecture Scenes (순서 이동됨: 05 -> 03) -->
+                <!-- 03. Roknesiology-Online (좌측 이미지 - 이동됨) -->
                 <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
-                    <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2070&auto=format&fit=crop" alt="강의 현장 스케치" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
-                    </div>
-                    <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
-                        <div class="text-brand font-bold mb-2 text-sm">03</div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-3">Lecture Scenes</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                            뜨거운 열기로 가득 찬 강의 현장을 직접 확인해보세요. 
-                            수많은 전문가들이 선택한 록쌤의 강의, 그 생생한 현장의 모습을 사진과 영상으로 담았습니다.
-                        </p>
-                        <a href="https://blog.naver.com/rokessaem/224118705772" target="_blank" class="inline-flex items-center text-sm font-bold text-white group-hover:text-brand transition-colors">
-                            현장 스케치 보기 <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 04. Roknesiology-Online (순서 변경: 03 -> 04, 레이아웃 변경: Left -> Right) -->
-                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row-reverse">
                     <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2070&auto=format&fit=crop" alt="온라인 강의 학습" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
                     </div>
                     <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
-                        <div class="text-brand font-bold mb-2 text-sm">04</div>
+                        <div class="text-brand font-bold mb-2 text-sm">03</div>
                         <h3 class="text-xl md:text-2xl font-bold mb-3">Roknesiology-Online 강의신청</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6">
                             시간과 장소에 구애받지 않는 전문가를 위한 온라인 스터디입니다. 
@@ -250,13 +225,13 @@
                     </div>
                 </div>
 
-                <!-- 05. Parameter-offline (순서 변경: 04 -> 05, 레이아웃 변경: Right -> Left) -->
-                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row">
+                <!-- 04. Parameter-offline (우측 이미지 - 이동됨) -->
+                <div class="group relative bg-cardbg rounded-2xl overflow-hidden border border-zinc-800 hover:border-brand transition-colors duration-300 flex flex-col md:flex-row-reverse">
                     <div class="w-full md:w-2/5 h-56 md:h-auto overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2075&auto=format&fit=crop" alt="오프라인 강의 실습" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute inset-0">
                     </div>
                     <div class="p-6 md:p-8 w-full md:w-3/5 flex flex-col justify-center">
-                        <div class="text-brand font-bold mb-2 text-sm">05</div>
+                        <div class="text-brand font-bold mb-2 text-sm">04</div>
                         <h3 class="text-xl md:text-2xl font-bold mb-3">Parameter-offline 강의신청</h3>
                         <p class="text-gray-400 text-sm leading-relaxed mb-6">
                             현장에서 즉시 적용 가능한 실전 테크닉을 배웁니다. 
